@@ -1,5 +1,5 @@
 <%= form_for(@micropost) do |f| %>
-  <%= render '/err', object: f.object %>
+  <%= render 'shared/err', object: f.object %>
   <div class="field">
     <%= f.text_area :content, placeholder: "Compose new micropost..." %>
   </div>
